@@ -102,7 +102,24 @@ print(listaUnica)
 
 # Ex. 9 - Crie um algoritmo para simular um sistema de compras, onde deverá ser solicitado nome 100x. Após isso, crie uma estrutura para quebrar a solicitação de nomes. Após isso, crie uma estrutura para solicitar preço, com isso, deixe o respectivo nome e preço juntos. Finalmente, mostre o valor total dos produtos.
 
+list = []
+valorTotal = 0
 
+
+for i in range(100):
+    name = str(input("Digite o nome: ").lower())
+    
+    if name == "exit":
+        break
+
+    preco = float(input("Digite o valor do preço: "))
+    valorTotal += preco
+
+    listaNomePreco = [name, preco]
+    list.append(listaNomePreco)
+
+print(list)
+print("Valor total: ", valorTotal)
 
 # Ex. 10 - Crie um algoritmo para solicitar o nome e nota para 4 alunos. Insira em uma estrutura com lista dentro de lista (nome, nota). Após isso, crie uma estrutura para mostrar os alunos aprovados com nota maior ou igual 6, mostrando o respctivo nome e nota. Crie também uma estrutura para mostrar os alunos com nota menor que 6, mostrando o respctivo nome e nota.
 
@@ -146,6 +163,39 @@ for a in l:
 
 # Ex. 11 - Crie um algoritmo para simular sistema com menu. o Usuário pode cadastrar, listar ou sair da estrutura. Se opção l, solicite nome, idadem cidade e deixe esar informações em uma estrutura de lista dentro de lista. Se opção 2, print o respectivo nome, idade e cidade da pessoa. Se opção 3, crie uma estrutura para sair do código.
 
+list2 = []
+
+while True:
+    opcao = str(input("Digite a sua opção 1- cadastro, 2- mostrar, 3- sair").lower())
+    if opcao == "cadastro" or opcao == "1":
+        listUser = []
+        name2 = str(input("Digite o nome: "))
+        age = int(input("Digite a idade: "))
+        cidade = str(input("Digite a sua cidade: "))
+        listUser.append(name2)
+        listUser.append(age)
+        listUser.append(cidade)
+        list2.append(listUser)
+    elif opcao == "mostrar" or opcao == "2":
+        print(list2)
+    elif opcao == "sair" or opcao == "3":
+        print("Até mais")
+        break
+    else:
+        print("Digite uma opção válida!")
+
+
 # Ex. 12 -  Criando uma Matriz (3X3) usando estrutura de repetição
 
+list3 = [[],[],[]]
+coluna = 0
 
+for x in range(3):
+    coluna += 1
+    li2 = 1
+    for z in range(3):
+        valor = int(input(f"Digite um valor da coluna {coluna} da linha {li2}: "))
+        list3[x].append(valor)
+        li2 += 1
+        
+print(list3)
