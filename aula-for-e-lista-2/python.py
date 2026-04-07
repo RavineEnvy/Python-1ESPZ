@@ -3,7 +3,7 @@
 numeros = []
 
 for i in range(5):
-    numero = int(in("Digite um número: "))
+    numero = int(input("Digite um número: "))
     numeros.append(numero)
     print(numeros)
 
