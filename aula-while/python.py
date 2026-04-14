@@ -128,17 +128,17 @@ print(listaLetras)
 
 # Ex. 11 - Cadastro de alunos: Crie m algoritmo que solicite 3 nomes e 3 idades. Deixe a informação em uma lista no formato nome-idade
 
-listaAlunos = []
-listaIdade = []
+lista_geral = []
 i = 0
 
 while i < 3:
     nomeAluno = input("Digite um nome:")
     idadeAluno = str(input("Digite a idade: "))
-    listaAlunos.append(nomeAluno)
-    listaIdade.append(idadeAluno)
-    print(f"Aluno: {listaAlunos[i]}. Idade: {listaIdade[i]}")
+    alunIdade = [nomeAluno, idadeAluno]
+    lista_geral.append(alunIdade)
+    print(f"Aluno: {nomeAluno}. Idade: {idadeAluno}")
     i += 1
+print(lista_geral)
 
 # Ex. 12 - Crie uma estrutura ue solicite itens de compra de forma que só sejá possível sair da estrutura de repetição, caso o usuário digite sair. Coloque os itens em uma lista.
 
@@ -156,14 +156,14 @@ while i < 3:
 
 # Outra maneira
 
-l = []
+list = []
 
 while True:
     i = input("Digite o que você deseja: ")
     if i == "sair":
         break
-    l.append(i)
-print(l)
+    list.append(i)
+print(f"Os itens escolhidos foram: {list}")
 
 # Ex. 13 - Crie um programa que solicite 5 números inteiros, armazene em uma lista o seu valor ao quadrado [numero, numero ** 2]
 
