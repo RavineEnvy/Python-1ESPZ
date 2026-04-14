@@ -99,7 +99,7 @@ limite = int(input("Digite um limite: "))
 i = 1
 valor = 0
 
-while i < limite:
+while i < limite + 1:
     valor = inicio * i
     print(f"{inicio} X {i} = {valor}")
     i += 1
