@@ -2,13 +2,13 @@
 
 soma = 0
 
-var1 = int(input("Digite um número: "))
+var1 =int(input("Digite um número: "))
 
 while var1 > 0:
-    soma += var1
-    print(f"a soma é: {soma}")
+    soma+=var1
+    print(f"{soma - var1} + {var1} = {soma}")
 
-    var1 = int(input("Digite um número: "))
+    var1=int(input("Digite um número: "))
 
 # Ex. 2
 
@@ -136,17 +136,17 @@ while i < 3:
 
 # Ex. 12 - Crie uma estrutura ue solicite itens de compra de forma que só sejá possível sair da estrutura de repetição, caso o usuário digite sair. Coloque os itens em uma lista.
 
-lista_itens = []
-sair = False
+# lista_itens = []
+# sair = False
 
-while not sair:
-    itens = input("O que deseja?: ")
+# while not sair:
+#     itens = input("O que deseja?: ")
 
-    if itens == "sair":
-        sair = True
-        continue
-    lista_itens.append(itens)
-print(lista_itens)
+#     if itens == "sair":
+#         sair = True
+#         continue
+#     lista_itens.append(itens)
+# print(lista_itens)
 
 # Outra maneira
 
