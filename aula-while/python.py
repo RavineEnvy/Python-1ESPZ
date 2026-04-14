@@ -75,7 +75,7 @@ while i <= 5:
     nome = input("Digite seu nome: ")
     listaNomes.append(nome)
     i += 1
-    print(listaNomes)
+print(listaNomes)
 
 # Ex. 8 - Crie um programa que acumule 5 números inteiros e decremente os valores inseridos pelo usuário.
 
