@@ -45,7 +45,7 @@ realizado = False
 while not realizado:
     entrada = int(input("Insira alguma coisa: "))
     
-    if entrada == 999:
+    if entrada >= 999:
         realizado = True
     else:
         print(entrada)
