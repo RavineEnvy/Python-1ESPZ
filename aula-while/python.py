@@ -192,6 +192,7 @@ while i < 3:
     curso = input("Digite Curso: ")
     lista_geral= [nomes, idades, curso]
     lista_completa.append(lista_geral)
+    print(f"Aluno(a): {nomes}, Idade: {idades} anos, Curso: {curso}")
     i += 1
 print(lista_completa)
 
