@@ -1,14 +1,20 @@
 # Ex. 1
 
 soma = 0
+lista_resultados = []
 
-var1 =int(input("Digite um número: "))
+var1 = int(input("Digite um número: "))
 
-while var1 > 0:
-    soma+=var1
-    print(f"{soma - var1} + {var1} = {soma}")
+while var1 != 0:
+    soma += var1
+    if var1 < 0:
+        print(f"{soma - var1} + ({var1}) = {soma}")
+    if var1 > 0:
+        print(f"{soma - var1} + {var1} = {soma}")
+    lista_resultados.append(soma)
 
     var1=int(input("Digite um número: "))
+print(f"Os resultados foram: {lista_resultados}")
 
 # Ex. 2
 
