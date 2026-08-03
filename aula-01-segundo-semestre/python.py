@@ -13,3 +13,6 @@ def abrir_app(app):
     pa.press("enter")
 
 abrir_app(lista_apps[int(decisao) - 1])
+
+
+#colab.research.google.com/drive/
