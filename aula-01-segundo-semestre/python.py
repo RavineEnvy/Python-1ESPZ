@@ -12,7 +12,7 @@ def abrir_app(app):
     ti.sleep(0.5)
     pa.press("enter")
 
-abrir_app(lista_apps[(decisao) - 1])
+abrir_app(lista_apps[(decisao - 1)])
 
 
 #colab.research.google.com/drive/
